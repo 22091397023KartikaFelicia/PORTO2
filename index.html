@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi -->
+  <nav>
+    <div class="container nav-flex">
+      <span class="logo">✧ porto.dev</span>
+      <div class="nav-links">
+        <a href="#proyek">Proyek</a>
+        <a href="#tentang">Tentang</a>
+        <button id="theme-toggle">🌙 Gelap</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Halo, saya <span class="highlight">Rina</span><br>Web Developer</h1>
+        <p>Saya membuat website yang bersih, cepat, dan ramah pengguna.</p>
+        <a href="#proyek" class="btn">Lihat Karya</a>
+        <a href="#tentang" class="btn btn-outline">Kontak</a>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar">👩‍💻</div>
+      </div>
+    </section>
+
+    <!-- Proyek Section -->
+    <section id="proyek">
+      <h2 class="section-title">Proyek Terbaru</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <div class="card-icon">🛒</div>
+          <h3>E-Commerce Mini</h3>
+          <p>Toko online sederhana dengan fitur keranjang dan checkout menggunakan Vanilla JS.</p>
+          <span class="badge">HTML/CSS/JS</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>Dashboard Cuaca</h3>
+          <p>Aplikasi cuaca real-time dengan API dan tampilan responsif.</p>
+          <span class="badge">React + API</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h3>To-Do List</h3>
+          <p>Aplikasi pencatat tugas dengan penyimpanan lokal (localStorage).</p>
+          <span class="badge">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" style="margin-bottom: 3rem;">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p style="max-width: 600px; color: #64748b;">Saya seorang pengembang web yang senang membangun antarmuka interaktif dan mempelajari teknologi baru. Mari berkolaborasi!</p>
+      <p style="margin-top: 1rem; font-weight: 500;">📧 rina@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2025 Rina Portofolio — Dibuat dengan ❤️
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
