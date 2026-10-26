@@ -3,72 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Sederhana</title>
+  <title>Portofolio | Elegant & Professional</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Google untuk kesan Elegan -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome untuk Ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigasi -->
-  <nav>
-    <div class="container nav-flex">
-      <span class="logo">✧ porto.dev</span>
-      <div class="nav-links">
-        <a href="#proyek">Proyek</a>
-        <a href="#tentang">Tentang</a>
-        <button id="theme-toggle">🌙 Gelap</button>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Porto<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
       </div>
     </div>
   </nav>
 
-  <main class="container">
-    <!-- Hero Section -->
-    <section class="hero">
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="container hero-content">
       <div class="hero-text">
-        <h1>Halo, saya <span class="highlight">Rina</span><br>Web Developer</h1>
-        <p>Saya membuat website yang bersih, cepat, dan ramah pengguna.</p>
-        <a href="#proyek" class="btn">Lihat Karya</a>
-        <a href="#tentang" class="btn btn-outline">Kontak</a>
+        <span class="greeting">Welcome to my portfolio</span>
+        <h1>Halo, saya <span class="highlight">Kartika Felicia</span></h1>
+        <h2>Web Developer & UI/UX Enthusiast</h2>
+        <p>Saya membangun website yang tidak hanya fungsional, tetapi juga memberikan pengalaman visual yang elegan dan profesional.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Lihat Project</a>
+          <a href="#about" class="btn btn-outline">Tentang Saya</a>
+        </div>
       </div>
-      <div class="hero-avatar">
-        <div class="avatar">👩‍💻</div>
+      <div class="hero-image">
+        <div class="image-box">
+          <!-- Ganti src dengan foto profilmu jika ada -->
+          <i class="fas fa-user-tie"></i>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Proyek Section -->
-    <section id="proyek">
-      <h2 class="section-title">Proyek Terbaru</h2>
+  <!-- About Section -->
+  <section id="about" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Saya adalah seorang pengembang web yang berfokus pada penciptaan antarmuka yang bersih, responsif, dan mudah digunakan. Dengan latar belakang di bidang teknologi informasi, saya percaya bahwa desain yang baik dan kode yang rapi adalah kunci kesuksesan sebuah produk digital.</p>
+          <p>Saat ini, saya terus mengeksplorasi teknologi terbaru dan senang berkolaborasi dalam tim untuk memecahkan masalah nyata melalui teknologi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React.js</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-figma"></i>
+          <h3>Figma</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
       <div class="projects-grid">
-        <div class="card">
-          <div class="card-icon">🛒</div>
-          <h3>E-Commerce Mini</h3>
-          <p>Toko online sederhana dengan fitur keranjang dan checkout menggunakan Vanilla JS.</p>
-          <span class="badge">HTML/CSS/JS</span>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>E-Commerce Elegant</h3>
+          <p>Toko online dengan desain mewah dan fitur keranjang belanja interaktif.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-icon">📊</div>
-          <h3>Dashboard Cuaca</h3>
-          <p>Aplikasi cuaca real-time dengan API dan tampilan responsif.</p>
-          <span class="badge">React + API</span>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Dashboard Analytics</h3>
+          <p>Visualisasi data interaktif untuk memantau metrik bisnis secara real-time.</p>
+          <div class="project-tags">
+            <span>React</span><span>API</span>
+          </div>
         </div>
-        <div class="card">
-          <div class="card-icon">📝</div>
-          <h3>To-Do List</h3>
-          <p>Aplikasi pencatat tugas dengan penyimpanan lokal (localStorage).</p>
-          <span class="badge">JavaScript</span>
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Task Manager App</h3>
+          <p>Aplikasi manajemen tugas dengan penyimpanan lokal dan antarmuka yang bersih.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>LocalStorage</span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Tentang Section -->
-    <section id="tentang" style="margin-bottom: 3rem;">
-      <h2 class="section-title">Tentang Saya</h2>
-      <p style="max-width: 600px; color: #64748b;">Saya seorang pengembang web yang senang membangun antarmuka interaktif dan mempelajari teknologi baru. Mari berkolaborasi!</p>
-      <p style="margin-top: 1rem; font-weight: 500;">📧 rina@example.com</p>
-    </section>
-  </main>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work <span>Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024 - Sekarang</div>
+          <div class="timeline-content">
+            <h3>Frontend Developer</h3>
+            <h4>PT. Teknologi Masa Depan</h4>
+            <p>Mengembangkan antarmuka web yang responsif dan memastikan performa website tetap optimal.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - 2024</div>
+          <div class="timeline-content">
+            <h3>Web Developer Intern</h3>
+            <h4>Startup Digital Kreatif</h4>
+            <p>Membantu tim dalam proses coding, testing, dan perbaikan bug pada platform klien.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Education Section -->
+  <section id="education" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2020 - 2024</div>
+          <div class="timeline-content">
+            <h3>S1 Teknologi Informasi</h3>
+            <h4>Universitas Teknologi Indonesia</h4>
+            <p>Lulus dengan predikat Cum Laude. Fokus pada pengembangan perangkat lunak dan interaksi manusia-komputer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span>Certifications</span></h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <i class="fas fa-certificate"></i>
+          <h3>Frontend Web Development</h3>
+          <p>Dicoding Indonesia (2023)</p>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-award"></i>
+          <h3>UI/UX Design Fundamentals</h3>
+          <p>Coursera (2023)</p>
+        </div>
+        <div class="cert-card">
+          <i class="fas fa-medal"></i>
+          <h3>JavaScript Algorithms</h3>
+          <p>freeCodeCamp (2022)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
-      &copy; 2025 Rina Portofolio — Dibuat dengan ❤️
+      <p>&copy; 2024 Kartika Felicia. All Rights Reserved.</p>
     </div>
   </footer>
 
